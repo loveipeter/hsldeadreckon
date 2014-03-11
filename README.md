@@ -9,7 +9,7 @@ Clone the repo and use npm to install the other dependencies:
 git clone <repo url>
 cd hsldeadreckon
 npm install
-npm install -g grunt-cli dalek-cli
+npm install -g grunt-cli
 ```
 
 Run:
