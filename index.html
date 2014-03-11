@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Navigator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="stylesheet" href="static/css/leaflet.css" />
+        <link rel="stylesheet" href="static/css/jquery.mobile-1.3.1.min.css" />
+        <style>
+            /* Hide all the app pages until jQuery Mobile inits to
+               avoid the Flash of Unstyled Content */
+            [data-role=page] { display: none; }
+
+            .splashscreen {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index:1001;
+                background: lightgrey;
+                text-shadow: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map" style="width: 100%; height: 800px; border: 0;"></div>
+        <script src="static/js/leaflet.js"></script>
+        <script src="static/js/jquery-1.8.3.min.js"></script>
+        <script src="static/js/jquery.mobile-1.3.1.min.js"></script>
+        <script>
+          var map = L.map('map').setView([60.170833, 24.9375], 13);
+          L.tileLayer('http://{s}.tile.cloudmade.com/dde3e76809d54a2fb29ac08bbc08335a/998/256/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2012 CloudMade'
+          }).addTo(map);
+          var marker = L.marker([60.170833, 24.9375]).addTo(map);
+        </script>
+    </body>
+</html>

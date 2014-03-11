@@ -1,0 +1,10 @@
+{
+  "name": "Dead-Reckoning",
+  "version": "0.1.0",
+  "description": "map app",
+  "dependencies": {
+    "grunt-contrib-watch": "0.x",
+    "grunt-contrib-connect": "0.x",
+    "grunt-contrib-jshint": "~0.7.2"
+  }
+}
