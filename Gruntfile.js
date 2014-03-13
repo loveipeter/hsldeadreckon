@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['src/*.js'],
-      tasks: ['jshint']
+      tasks: ['jshint', 'browserify']
     },
     connect: {
       server: {
@@ -15,11 +15,19 @@ module.exports = function(grunt) {
           base: '.'
         }
       }
+    },
+    browserify: {
+      dist: {
+        files: {
+          'static/js/client.js': ['src/*.js']
+        }
+      }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-browserify');
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['browserify', 'connect', 'watch']);
 };

@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "map app",
   "dependencies": {
+  },
+  "devDependencies": {
     "grunt-contrib-watch": "0.x",
     "grunt-contrib-connect": "0.x",
-    "grunt-contrib-jshint": "~0.7.2"
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-browserify": "~1.2.11",
+    "browserify": "~2.36.1"
   }
 }
