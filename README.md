@@ -18,3 +18,11 @@ grunt
 ```
 
 View server at localhost:9001 and hack away.
+
+Run:
+
+```
+npm install
+```
+
+if any new dependencies added.
