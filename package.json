@@ -2,6 +2,12 @@
   "name": "Dead-Reckoning",
   "version": "0.1.0",
   "description": "map app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loveipeter/hsldeadreckon"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
   "dependencies": {
   },
   "devDependencies": {

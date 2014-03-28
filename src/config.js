@@ -16,8 +16,8 @@ var maps = {
 
 var cities = {
   helsinki : {
-    latitude: '60.187148',
-    longitude: '24.816375'
+    latitude: '60.170833',
+    longitude: '24.9375'
   }
 };
 
